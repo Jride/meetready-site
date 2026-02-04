@@ -64,6 +64,66 @@ nav .container {
     color: #007aff;
 }
 
+/* Language Switcher */
+.lang-switcher {
+    position: relative;
+}
+
+.lang-switcher-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.lang-switcher-btn:hover {
+    border-color: #007aff;
+    color: #007aff;
+}
+
+.lang-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 0.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    min-width: 160px;
+    z-index: 200;
+    overflow: hidden;
+}
+
+.lang-switcher:hover .lang-dropdown {
+    display: block;
+}
+
+.lang-dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.lang-dropdown a:hover {
+    background-color: #f0f0f5;
+    color: #007aff;
+}
+
+.lang-dropdown a.active {
+    color: #007aff;
+    font-weight: 600;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
